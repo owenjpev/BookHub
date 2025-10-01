@@ -1,5 +1,8 @@
 {
   "name": "bookhub-monorepo",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "npm run start --prefix backend",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
