@@ -1,0 +1,7 @@
+{
+  "name": "bookhub-monorepo",
+  "scripts": {
+    "start": "npm run start --prefix backend",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+  }
+}
