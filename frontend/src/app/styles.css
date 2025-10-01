@@ -1,0 +1,42 @@
+/* This is where all the custom classes go (I couldn't get the tailwind.config.ts to work so this is the next best thing I suppose) */
+
+.bg-main {
+    background-color: #F2E4D1;
+}
+
+.bg-primary {
+    background-color: #DAAA63;
+}
+
+.bg-secondary {
+    background-color: #2C1810;
+}
+
+.text-primary {
+    color: #DAAA63;
+}
+
+.text-secondary {
+    color: #2C1810;
+}
+
+.border-primary {
+    border-color: #DAAA63;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.font-libre-calson {
+    font-family: "Libre Caslon Text";
+}
+
+.small-shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-shadow {
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
