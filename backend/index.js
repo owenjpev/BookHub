@@ -12,20 +12,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin) return callback(null, true);
-        
-        if (origin === "http://localhost:3000") {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true
+  origin: true,
+  credentials: true
 }));
+
 app.use(express.json());
 app.use(session({
-	store: new pgSession({ pool: pool, tableName: "user_sessions'" }),
+	store: new pgSession({ pool: pool, tableName: "user_sessions" }),
 	secret: process.env.SESSION_SECRET || "abc123",
 	resave: false,
 	saveUninitialized: false,
